@@ -12,4 +12,7 @@ export default defineConfig({
     },
   },
   base: "/",
+  server: {
+    allowedHosts: ["michaels-mac"],
+  },
 })

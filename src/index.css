@@ -116,6 +116,7 @@
     --radius-2xl: calc(var(--radius) * 1.8);
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
+    --color-plum: #77183C;
 }
 
 @layer base {
@@ -130,5 +131,8 @@
     }
   html {
     @apply font-serif;
+    }
+    h1 {
+      @apply text-2xl
     }
 }
