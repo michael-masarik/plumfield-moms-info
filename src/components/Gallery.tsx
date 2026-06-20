@@ -33,23 +33,25 @@ export const Gallery = () => {
                 </CardFooter>
             </Card>
             <Card className="w-full">
-                <img className="relative z-20 aspect-video w-full object-cover h-45" src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/e5f98bc9-5db8-494c-bce6-abcc7fb520ad/2/w=1920,quality=90,fit=scale-down" />
+                <img className="relative z-20 aspect-video w-full object-cover h-45" src={formCover} />
                 <CardHeader>
-
                     <CardAction>
-                        <Badge variant="secondary">Library</Badge>
+                        <Badge variant="secondary">Form</Badge>
                     </CardAction>
                     <CardTitle>
-                        Split Rocks Lending Library
+                        Plumfield Library Waiting List
                     </CardTitle>
                     <CardDescription>
-                        Books curated for the purpose of sharing truth, goodness, and beauty with families who desire to cultivate virtue in their homes.
+                        Use the link below to sign up for our waiting list
                     </CardDescription>
+
+
                 </CardHeader>
                 <CardFooter className="mt-auto">
-                    <Button className="w-full" asChild><a href="https://splitrockslibrary.com" target="_blank">View Website</a></Button>
+                    <Button className="w-full" onClick={() => setOpen(true)}>Open Form</Button>
                 </CardFooter>
             </Card>
+
             <Card className="w-full">
                 <div className="relative z-20 aspect-video w-full object-cover h-45  bg-plum mt-0 pt-0">
                     <div className="flex h-full w-full items-center justify-center">
@@ -69,11 +71,13 @@ export const Gallery = () => {
                         Plumfield Press
                     </CardTitle>
                     <CardDescription>
-                        A Small Press Built by Librarians for Librarians, Families, and Schools
+                        <p className="mb-4">A Small Press Built by Librarians for Librarians, Families, and Schools</p>
+                        <p className="font-bold text-red-800">Convention Pricing: 20% Off at Checkout (use link below)</p>
+
                     </CardDescription>
                 </CardHeader>
                 <CardFooter className="mt-auto">
-                    <Button className="w-full" asChild><a href="https://plumfieldpress.com" target="_blank">View Website</a></Button>
+                    <Button className="w-full" asChild><a href="https://plumfieldpress.com/discount/CONVENTION2026?utm_campaign=00dd32&utm_source=discount_shareable_link" target="_blank">View Website</a></Button>
                 </CardFooter>
             </Card>
             <Card className="w-full">
@@ -113,22 +117,21 @@ export const Gallery = () => {
                 </CardFooter>
             </Card>
             <Card className="w-full">
-                <img className="relative z-20 aspect-video w-full object-cover h-45" src={formCover} />
+                <img className="relative z-20 aspect-video w-full object-cover h-45" src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/e5f98bc9-5db8-494c-bce6-abcc7fb520ad/2/w=1920,quality=90,fit=scale-down" />
                 <CardHeader>
+
                     <CardAction>
-                        <Badge variant="secondary">Form</Badge>
+                        <Badge variant="secondary">Library</Badge>
                     </CardAction>
                     <CardTitle>
-                        Plumfield Library Waiting List
+                        Split Rocks Lending Library
                     </CardTitle>
                     <CardDescription>
-                        Use the link below to sign up for our waiting list
+                        Books curated for the purpose of sharing truth, goodness, and beauty with families who desire to cultivate virtue in their homes.
                     </CardDescription>
-
-
                 </CardHeader>
                 <CardFooter className="mt-auto">
-                    <Button className="w-full" onClick={() => setOpen(true)}>Open Form</Button>
+                    <Button className="w-full" asChild><a href="https://splitrockslibrary.com" target="_blank">View Website</a></Button>
                 </CardFooter>
             </Card>
             <FilloutPopupEmbed filloutId="fE4qATZfL8us" isOpen={open} onClose={() => setOpen(false)} />
